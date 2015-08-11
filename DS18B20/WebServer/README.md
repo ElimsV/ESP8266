@@ -25,10 +25,10 @@ About sketch:
 2. You have to download OneWire.h and DallasTemperature.h to make sure the sketch run smoothly.
 
 3. In the very end of the sketch, some unneccessary codes, which basically should function as drawing the changing temperature-time 
-   graph, is reserved for you information. However I have to say that there is some undetermined bugs in that part. It will be more
-   than welcome if you have the interest to help me figure it out!
+   graph, is reserved for you information. However I have to say that there are some undetermined bugs in that part. It will be more
+   than welcome if you have the interest to help me figure them out!
 
-4. After the system is functioning, one can type <server ip> into the address bar of a browser to view the sensor data and
+4. After the system is functioning, one can type the server IP, which should be printed on the Serial Monitor, into the address bar of a browser to view the sensor data and
     how long the system has being operating. The page is set refreshing every 5 seconds automatically. You can modify it if 
     you like.
 
