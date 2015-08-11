@@ -3,7 +3,7 @@ This repository focuses on wireless communication and control system with ESP826
 
 # Useful links
 ESP8266 wiki for beginners : http://www.esp8266.com/wiki/doku.php?id=start
-Here one can basically find anything he/she needs to get start with ESP8266.
+Here one can basically find anything he/she needs to get started on ESP8266.
 NOTE: this wiki only provides updated AT Firmware, if you wanna use nodeMCU please refer to https://github.com/nodemcu/nodemcu-firmware
 
 How to use Arduino IDE to programme ESP8266: https://github.com/esp8266/Arduino
