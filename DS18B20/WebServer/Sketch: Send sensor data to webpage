@@ -65,16 +65,16 @@ void handleRoot() {
   Serial.print(TempC_1);
   Serial.println(" Degrees C");
   
-	char temp[400];
+	char temp[500];
 	int sec = millis() / 1000;
 	int min = sec / 60;
 	int hr = min / 60;
-  char strTempC_0[4];                       // Convert float format to string format.
-  dtostrf (TempC_0 ,2 ,2 ,strTempC_0);      // Necessary because arduino doesn't recognize "%f"
-  char strTempC_1[4];                       // which would otherwise be used in the following 
-  dtostrf (TempC_1 ,2 ,2 ,strTempC_1);      // html part.
+  char strTempC_0[10];                       // Convert float format to string format.
+  dtostrf (TempC_0 ,5 ,2 ,strTempC_0);      // Necessary because arduino doesn't recognize "%f"
+  char strTempC_1[10];                       // which would otherwise be used in the following 
+  dtostrf (TempC_1 ,5 ,2 ,strTempC_1);      // html part.
     
-	snprintf ( temp, 400,
+	snprintf ( temp, 500,
 
 "<html>\
   <head>\
