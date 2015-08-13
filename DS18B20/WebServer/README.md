@@ -3,7 +3,7 @@ In this sketch, esp8266 is uesd as a server and presenting sensor data from DS18
 
 #About hardware and wiring
 
-1. Thanks to oneWire system, multiple sensors could be monitored by only one GPIO interface using parallel connection.
+1. Thanks to oneWire system, multiple sensors could be monitored by only one GPIO interface using parallel connection. However up to 64 devices on the same bus may take sometime to negotiate a response.
 
 2. Esp8266-esp-01 chip is applied here as well as a FTDI chip.
 
