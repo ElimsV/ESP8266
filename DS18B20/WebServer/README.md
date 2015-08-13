@@ -1,7 +1,7 @@
+#Introduction
 In this sketch, esp8266 is uesd as a server and presenting sensor data from DS18B20 on webpage.
 
-
-About hardware and wiring:
+#About hardware and wiring
 
 1. Thanks to oneWire system, multiple sensors could be monitored by only one GPIO interface using parallel connection.
 
@@ -17,7 +17,7 @@ About hardware and wiring:
    then burn the sketch again.
 
 
-About sketch:
+#About the sketch
 
 1. This sketch is modified from an example sketch named AdvancedWebServer. Besides a sketch named DS18B20-With-Wifi-ESP8266 also
    gave some inspiration. Thanks to the authors.
@@ -32,5 +32,8 @@ About sketch:
     how long the system has being operating. The page is set refreshing every 5 seconds automatically. You can modify it if 
     you like.
 
-
 That is almost all about it. Burn the sketch and give it a try!
+
+#What could be done in future
+1. If you would like to make a diagram of all the received data you may wanna have a look at this: http://www.instructables.com/id/Send-sensor-data-DHT11-BMP180-to-ThingSpeak-with-a/?ALLSTEPS (the step 4 part in below)
+2. In both this case and the WebClient case, only one simple number is received at a time, while in practice we are more likely to deal with unsealing packages. Could look into some protocals and code something out!
