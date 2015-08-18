@@ -43,7 +43,7 @@ This is set in ...\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h
 Again, I would like to suggest you to check the power supply of esp first when run into any eccentric bug. The unsteadiness of
 power will notably influence the performance of esp.
 
-###Several Tips on Function Usage
+###Several tips on function usage
 1. No matter string[i] or char[i], it means the number ith character which **counts from 0**.
 2. Serial.read() returns the first byte of incoming serial data available (or -1 if no data is available), while 
    Serial.readString reads characters from the serial buffer into a string and terminates if it times out. setTimeout function
@@ -58,7 +58,7 @@ power will notably influence the performance of esp.
    String str_hex=String (n,HEX);
 5. The for loop must exist in a function.
 
-###Things Could Be Done in Future
+###What could be done in future
 Plan to set the esp as a client and a concentrator, to get packages from wifi mesh upon request, decapsulate the packages and 
 upload sensor data to websites like ThingSpeak for visualization.
 On the other hand, esp can also be set as a webserver and a collector, to get data packages directly from sensor upon request
