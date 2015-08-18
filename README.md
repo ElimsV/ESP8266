@@ -1,5 +1,7 @@
-# esp8266
+# ESP8266
 This repository focuses on wireless communication and control system with ESP8266.
+
+The system is equipped with ESP8266 manifested leading features are: energy saving VoIP quickly switch between the sleep / wake patterns, with low-power operation adaptive radio bias, front-end signal processing functions, troubleshooting and radio systems coexist characteristics eliminate cellular / Bluetooth / DDR / LVDS / LCD interference.
 
 # Useful links
 ESP8266 wiki for beginners : http://www.esp8266.com/wiki/doku.php?id=start
