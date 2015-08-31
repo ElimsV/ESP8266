@@ -1,4 +1,3 @@
-```c++
 /*
  * This sketch aims to decapsulate data packages sent from thermal meters.
  * The format of package is predetermined, i.e. the identifier of start bit, end bit, lengths and
@@ -394,4 +393,3 @@ char* digitConverter14 (char partPackage14[15]) {
   converterReturn14[19]='\0';
   return (converterReturn14);
 }
-```
