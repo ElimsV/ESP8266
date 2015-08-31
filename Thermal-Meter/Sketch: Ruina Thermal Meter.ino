@@ -1,4 +1,3 @@
-```ino
 /*
  * This sketch aims to read thermal meter upon request.
  * ESP8266 is set as a server. When you visit its IP address in a browser, 
@@ -91,4 +90,3 @@ void loop () {
   
   client.stop();
 }
-```
