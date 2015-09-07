@@ -58,5 +58,6 @@ void loop() {
     }
     Serial.readBytes ( buffer,128 );
     msgSize = sizeof ( buffer );
+    client.write ( (const char*)buffer,72 );
   } 
 }
