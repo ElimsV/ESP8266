@@ -23,7 +23,7 @@ I am trying to figure out how to use client.write instead of for loop and printf
 So far I have never passed the compilation once which totally doesn't make sense. I think there is something wrong with WiFiClient.h file.
 
 **UPDATE**
-Previously I can't use client.write function totally because lacking the format declaration which looks like the following:
+Previously I can't use client.write function has nothing to do with the library file but totally because lacking the format declaration which looks like the following:
 ```c++
 client.write ( (const char*)buffer,len );
 ```
