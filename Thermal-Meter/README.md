@@ -21,6 +21,7 @@ Leave out the some fundamental knowledge, you should note that:
 ##What could be done in future
 I am trying to figure out how to use client.write instead of for loop and printf function to send package back to the webpage.
 So far I have never passed the compilation once which totally doesn't make sense. I think there is something wrong with WiFiClient.h file.
+
 **UPDATE**
 Previously I can't use client.write function totally because lacking the format declaration which looks like the following:
 ```c++
