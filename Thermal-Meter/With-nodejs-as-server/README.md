@@ -18,6 +18,6 @@ it but merely does the delivery work.
    
 4. The client only need to be declared and connected to the server once, while in the loop part you might re-connected it to the server according to connection status.
 
-##What can be done in future
+##What could be done in future
 As this is a very simple model of AMI, to be more practical, an eletronic valve could be used. When the server finds the customer
 has consumed too much heat without paying enough money, it will send a "switch off" command to esp8266 which will in return close the valve.
