@@ -55,9 +55,10 @@ void loop() {
     Serial.write ( buffer,19 );
     while ( !Serial.available() ) {  // Wait for the data package from the meter
       delay (10);
+    } else {
+      break;
     }
     Serial.readBytes ( buffer,128 );
-    msgSize = sizeof ( buffer );
     client.write ( (const char*)buffer,72 );
   } 
 }
