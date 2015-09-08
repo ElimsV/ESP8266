@@ -59,7 +59,7 @@ void loop() {
     Serial.readBytes ( buffer,128 );
     client.write ( (const char*)buffer,72 );
   } else {
-    break;
+
   }
   client.stop();
 }
