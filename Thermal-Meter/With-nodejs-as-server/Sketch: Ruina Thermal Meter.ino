@@ -61,4 +61,5 @@ void loop() {
   } else {
     break;
   }
+  client.stop();
 }
