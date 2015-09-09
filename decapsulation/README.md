@@ -1,11 +1,11 @@
 ##Introduction
 This is a simple while practical example to illustrate how to decapsulate a reletive long package. All the codes are writen
-regards to Rui Na Thermal Meter. Although ideas are similar, you ought to modify some specific details when apply this sketch
+regarding to Ruina Heat Meter. Although ideas are similar, you ought to modify some specific details when apply this sketch
 in other cases.
 
-Basically this is all about for loops, chars, char*s, and many assignment statements. As for me, the trick part is the proper use
-of chars and char*s. char takes up one byte of memory that stores one character value, but it seems to me that it is also capable
-of assigning a character string into one variable. char* is very special. It declares particularly a string ended with '\0'. Besides
+Basically this are all about for loops, chars, char\*s, and many assignment statements. As for me, the trick part is the proper use
+of chars and char\*s. char takes up one byte of memory that stores one character value, but it seems to me that it is also capable
+of assigning a character string into one variable. char* is very special. It declares particularly a character array ended with '\0'. Besides
 it can declare an array of strings, like:
 ```
 char unit1[3]="02";
@@ -13,7 +13,7 @@ char unit2[3]="05";
 char unit3[3]="08";
 char unit4[3]="0A";
 
-char* unitTotal[16]={
+char* unitTotal[4]={
   unit1,unit2,unit3,unit4,
 };
 ```
@@ -25,15 +25,15 @@ instead of
 ```
 char unit1[2]="02";
 ```
-This is because once you declare a string or a character, it is highly recommanded to add one on the size of your string on the 
+This is because once you declare a constant string or a character, it is highly recommanded to add one on the size of your string on the 
 basis of its original length and to be more precise you can even manually include '\0' in your string. '\0' symbol is used to 
 declare the end of a string. Usually system will automatically assign it at the end of a string, however the premise is you have 
 left one more byte for it to do so.
 
 Another thing that bothered me was the serial buffer size. First due to practical constraints at that time, I planed to use an 
-arduino pro mini to test my code, however I found it can't read in the whole package. After ruling other other possibilities 
+arduino pro mini to test my code, however I found it can't read in the whole package. After eliminating other possible mistakes
 I found the the default serial buffer size of mini is only 64 bytes which is apparently too small for my need. As a result I 
-tested directly on esp8266 instead. The RX buffer on the esp is something like 256 bytes. Of course you can just change the buffer
+tested directly on esp8266 instead. The RX buffer on the esp is something no less than 256 bytes. Of course you can just change the buffer
 size of arduino manually using:
 ```
 #define SERIAL_BUFFER_SIZE 64
