@@ -178,7 +178,7 @@ void loop() {
   indexCheckSum = indexStatus + 4;
   
   if ((indexCheckSum + 2) != indexEnd) {
-    Serial.println("Wrong indexing!");  // Check the indexing is right or not.
+    Serial.println("Invalid Package!");  // Check the indexing is right or not.
   }
   // Assign the data in appropriate variables
   else {
